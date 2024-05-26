@@ -13,16 +13,19 @@ cardGame.fillCards();
 cardGame.shuffleCards();
 cardGame.dealtCards();
 cardGame.whoHadTopCard();
-console.log(cardGame.cards);
-console.log(cardGame.playerOneDeck);
-console.log(cardGame.playerTwoDeck);
-console.log(cardGame.playerOnePoints);
-console.log(cardGame.playerTwoPoints);
-console.log(cardGame.playerOnePile);
-console.log(cardGame.playerTwoPile);
 cardGame.whoWins();
 
+console.log("Cartas:", cardGame.cards);
+console.log("Player One Deck:", cardGame.playerOneDeck);
+console.log("Player Two Deck:", cardGame.playerTwoDeck);
+console.log("Player One Pile:", cardGame.playerOnePile);
+console.log("Player One Points:", cardGame.playerOnePoints);
+console.log("Player Two Points:", cardGame.playerTwoPoints);
+console.log("Player Two Pile:", cardGame.playerTwoPile);
+console.log(cardGame.winner);
 
-app.listen(port, () => {
-  console.log(`Server is running at http://localhost:${port}`);
-});
+
+
+// app.listen(port, () => {
+//   console.log(`Server is running at http://localhost:${port}`);
+// });
